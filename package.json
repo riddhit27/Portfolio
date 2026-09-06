@@ -4,19 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "opennextjs-cloudflare build",
+    "build": "next build",
     "start": "next start",
-    "postinstall": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "postinstall": "next build"
   },
   "dependencies": {
-    "@opennextjs/cloudflare": "latest",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
-  },
-  "devDependencies": {
-    "wrangler": "latest"
   }
 }
