@@ -63,6 +63,6 @@ export default function Home() {
       <div className="project-grid">{projects.map((project) => <article className="project-card" key={project.title}><ProjectArt kind={project.kind} /><div className="project-copy"><div><h3>{project.title}</h3><time>{project.date}</time></div><p>{project.copy}</p></div></article>)}</div>
     </section>
 
-    <footer><div className="thanks"><span>♥</span> Thanks for stopping by! <span>◕‿◕</span></div><p>Designed in Figma. Made with Framer. Powered by AI and a lot of coffee.</p></footer>
+    <footer><div className="thanks"><span>♥</span> Thanks for stopping by! <span>◕‿◕</span></div><p>Made in Figma, built with Codex, powered by a lot of coffee.</p></footer>
   </main>;
 }
