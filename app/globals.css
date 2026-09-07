@@ -5,7 +5,7 @@
 :root { --ink:#232122; --paper:#fff9f4; --peach:#fff0e1; --line:#f3dfcb; --purple:#7c22e8; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { margin:0; color:var(--ink); font-family:"Instrument Sans"; background-color:var(--paper); background-image:radial-gradient(#f1cdb6 1.15px, transparent 1.15px); background-size:34px 34px; }
+body { margin:0; color:var(--ink); font-family:"Instrument Sans"; background:var(--paper) url("/images/grid-pattern.svg") repeat; background-size:60px 58px; }
 button { font:inherit; }
 main { overflow:hidden; }
 .section { scroll-margin-top:92px; }
