@@ -9,12 +9,13 @@ body { margin:0; color:var(--ink); font-family:"Instrument Sans"; background:var
 button { font:inherit; }
 main { overflow:hidden; }
 .section { scroll-margin-top:92px; }
-nav { position:fixed; z-index:5; top:24px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:2px; padding:5px 8px 5px 12px; background:#1e1e1f; border-radius:100px; box-shadow:0 8px 22px #33251d18; }
-nav button { cursor:pointer; border:0; color:#f6f3f2; padding:10px 14px; background:transparent; border-radius:999px; font-size:12px; transition:background .16s ease, color .16s ease, transform .12s ease; }
-nav button:hover, nav button.active:hover { background:#fff; color:#222; }
-nav button:active { transform:scale(.94); background:#b6bc81; color:#252326; }
-nav .mark { padding:2px 9px 2px 2px; font-family:"Instrument Serif"; font-size:22px; font-style:italic; }
-nav .active { background:#303030; }
+nav { position:fixed; z-index:5; top:24px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:24px; padding:8px 40px; background:#1f1f1f; border:1px solid #d6cec2; border-radius:100px; box-shadow:0 8px 22px #33251d18; }
+nav button { cursor:pointer; border:0; color:#fafafa; padding:10px 0; background:transparent; border-radius:999px; font-size:14px; line-height:1; transition:background .16s ease, color .16s ease, transform .12s ease; }
+nav button:hover { background:#e9e9e9; color:#222; }
+nav button:active { transform:scale(.96); background:#fff; color:#222; }
+nav .mark { width:24px; height:32px; object-fit:cover; object-position:center; flex:none; }
+nav .active { padding:10px 16px; margin:-10px -16px; background:#f5f5f5; color:#222; }
+nav .active:hover { background:#f5f5f5; color:#222; }
 .hero { min-height:690px; padding:190px 24px 150px; position:relative; display:grid; place-items:center; }
 .intro { width:min(620px, 100%); text-align:center; font-size:18px; line-height:1.48; }
 .intro p { margin:0; }.intro .lead { margin-bottom:16px; font-weight:600; }
@@ -26,4 +27,4 @@ h2 { margin:0; font:400 26px/1 "Instrument Serif"; text-align:center; }
 footer { background:#202020; color:#f7f3ef; text-align:center; padding:54px 20px 58px; }.thanks { display:flex; align-items:center; justify-content:center; gap:12px; font:400 22px "Instrument Serif"; }.thanks img { display:block; width:27px; height:27px; object-fit:contain; }footer p{margin:18px 0 0;color:#bcb8b5;font-size:11px}
 @media (max-width:1050px){.project-grid{grid-template-columns:repeat(3, minmax(0,1fr));}.project-card:nth-child(4),.project-card:nth-child(5){grid-column:span 1}.art{height:180px}}
 @media (max-width:760px){.experience-doodle{display:none}}
-@media (max-width:640px){nav{top:14px;width:calc(100% - 28px);justify-content:center;padding:5px}.hero{min-height:680px;padding-top:160px}.intro{font-size:17px}.plant{width:42px;left:9%;top:130px}.loops{width:52px;right:12%;top:150px}.cup{width:46px;right:7%;top:260px}.drop{width:40px;left:9%;top:350px}.eye{width:35px;right:29%;top:386px}.experience{padding:70px 16px 105px}.resume article{padding:16px}.role-top{align-items:flex-start}.resume p{font-size:11.5px}.projects{padding:0 16px 75px}.project-grid{grid-template-columns:1fr;gap:16px;max-width:410px}.art{height:190px}.project-copy{min-height:104px}h2{font-size:25px}}
+@media (max-width:640px){nav{top:14px;width:calc(100% - 28px);justify-content:center;gap:18px;padding:8px 24px}nav button{font-size:13px}nav .active{padding:10px 12px;margin:-10px -12px}.hero{min-height:680px;padding-top:160px}.intro{font-size:17px}.plant{width:42px;left:9%;top:130px}.loops{width:52px;right:12%;top:150px}.cup{width:46px;right:7%;top:260px}.drop{width:40px;left:9%;top:350px}.eye{width:35px;right:29%;top:386px}.experience{padding:70px 16px 105px}.resume article{padding:16px}.role-top{align-items:flex-start}.resume p{font-size:11.5px}.projects{padding:0 16px 75px}.project-grid{grid-template-columns:1fr;gap:16px;max-width:410px}.art{height:190px}.project-copy{min-height:104px}h2{font-size:25px}}

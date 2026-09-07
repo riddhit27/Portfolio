@@ -32,8 +32,8 @@ export default function Home() {
 
   return <main>
     <nav aria-label="Main navigation">
-      <button className="mark" onClick={() => scrollTo("about")} aria-label="Back to top">rt</button>
-      {[['about', 'about me'], ['experience', 'experience'], ['projects', 'projects']].map(([id, label]) => <button key={id} onClick={() => scrollTo(id)} className={active === id ? "active" : ""}>{label}</button>)}
+      <img className="mark" src="/images/rt-mark.svg" alt="rt" />
+      {[['about', 'about me'], ['experience', 'experience'], ['projects', 'projects']].map(([id, label]) => <button key={id} onClick={() => scrollTo(id)} className={active === id ? "active" : ""} aria-current={active === id ? "page" : undefined}>{label}</button>)}
     </nav>
 
     <section id="about" className="hero section">
