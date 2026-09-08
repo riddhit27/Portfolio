@@ -51,7 +51,7 @@ export default function Home() {
       <img className="experience-doodle gold-bar" src="/images/illustrations/gold bar.svg" alt="" />
       <h2 className="section-title experience-title">Experience</h2>
       <div className="resume">{roles.map((role) => <article key={role.company}><div className="role-top"><h3>{role.company}</h3><time>{role.dates}</time></div><p>{role.copy}</p></article>)}</div>
-      <a className="resume-link" href="#experience">View full resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.29 8.71a.996.996 0 0 0 0 1.41L14.88 12H5a1 1 0 1 0 0 2h9.88l-2.59 2.59a.996.996 0 1 0 1.41 1.41l4.3-4.3a.996.996 0 0 0 0-1.41l-4.3-4.29a.996.996 0 0 0-1.41 0Z" /></svg></a>
+      <a className="resume-link" href="/resume/Riddhi-T-Resume.pdf" target="_blank" rel="noopener noreferrer">View full resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.29 8.71a.996.996 0 0 0 0 1.41L14.88 12H5a1 1 0 1 0 0 2h9.88l-2.59 2.59a.996.996 0 1 0 1.41 1.41l4.3-4.3a.996.996 0 0 0 0-1.41l-4.3-4.29a.996.996 0 0 0-1.41 0Z" /></svg></a>
     </section>
 
     <section id="projects" className="projects section">
