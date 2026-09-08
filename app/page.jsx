@@ -10,11 +10,11 @@ const roles = [
 ];
 
 const projects = [
-  { card: "/images/project-cards/nykaa.svg", pdf: "/case-studies/1_Nykaa%20Portfolio.pdf", title: "Nykaa Project Showcase" },
-  { card: "/images/project-cards/jupiter.svg", pdf: "/case-studies/2_%20Jupiter%20Case%20study_Credit%20card%20onboarding.pdf", title: "Jupiter Case Study" },
-  { card: "/images/project-cards/jar.svg", pdf: "/case-studies/3_Jar_Project%20Showcase.pdf", title: "Jar Project Showcase" },
-  { card: "/images/project-cards/savings-goal.svg", pdf: "/case-studies/4_Jar_Savings%20Goal%20Case%20study.pdf", title: "Savings Goal – Jar Case Study" },
-  { card: "/images/project-cards/weekly-magic.svg", pdf: "/case-studies/5_Jar_Weekly%20Magic%20Case%20study.pdf", title: "Weekly Magic – Jar Case Study" },
+  { card: "/images/project-cards/nykaa.svg", title: "Nykaa Project Showcase" },
+  { card: "/images/project-cards/jupiter.svg", title: "Jupiter Case Study" },
+  { card: "/images/project-cards/jar.svg", title: "Jar Project Showcase" },
+  { card: "/images/project-cards/savings-goal.svg", title: "Savings Goal – Jar Case Study" },
+  { card: "/images/project-cards/weekly-magic.svg", title: "Weekly Magic – Jar Case Study" },
 ];
 
 export default function Home() {
@@ -56,7 +56,7 @@ export default function Home() {
 
     <section id="projects" className="projects section">
       <h2 className="section-title projects-title">Key Projects</h2>
-      <div className="project-grid">{projects.map((project) => <a className="project-card" key={project.title} href={project.pdf} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title} PDF`}><img src={project.card} alt={project.title} /></a>)}</div>
+      <div className="project-grid">{projects.map((project) => <article className="project-card" key={project.title}><img src={project.card} alt={project.title} /></article>)}</div>
     </section>
 
     <footer><div className="thanks"><img src="/images/illustrations/heart-footer.svg" alt="" /> Thanks for stopping by! <img src="/images/illustrations/cat.svg" alt="" /></div><p>Made in Figma, built with Codex, powered by a lot of coffee.</p></footer>
