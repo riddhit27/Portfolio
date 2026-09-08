@@ -10,12 +10,12 @@ button { font:inherit; }
 main { overflow:hidden; }
 .section { scroll-margin-top:92px; }
 nav { position:fixed; z-index:5; top:24px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:40px; padding:8px 40px; background:#1f1f1f; border:1px solid #d6cec2; border-radius:100px; box-shadow:0 8px 22px #33251d18; }
-nav button { cursor:pointer; flex:none; height:40px; border:0; color:#fafafa; padding:0 16px; background:transparent; border-radius:20px; font-size:20px; line-height:1.2; white-space:nowrap; transition:background .16s ease, color .16s ease, transform .12s ease; }
+nav button { cursor:pointer; flex:none; height:40px; border:0; color:#fafafa; padding:0 16px; background:transparent; border-radius:20px; font-size:20px; font-weight:400; line-height:1.2; white-space:nowrap; transition:background .16s ease, color .16s ease, transform .12s ease; }
 nav button:hover { background:rgb(255 255 255 / .04); }
 nav button:active { transform:scale(.98); background:rgb(255 255 255 / .08); }
 nav button:focus-visible { outline:2px solid #fafafa; outline-offset:3px; }
 nav .mark { width:40px; height:40px; padding:4px 0 8px; border-radius:50%; object-fit:contain; flex:none; }
-nav .active, nav .active:hover { background:#a2ab73; color:#1f1f1f; }
+nav .active, nav .active:hover { background:#a2ab73; color:#1f1f1f; font-weight:500; }
 h2 { margin:0; font:400 clamp(28px, 2.1vw, 40px)/1.5 "Instrument Serif"; text-align:center; }.section-title { position:relative; isolation:isolate; padding:18px 28px; width:max-content; margin-inline:auto; }.section-title::before { content:""; position:absolute; z-index:-1; inset:50% auto auto 50%; width:100%; height:100%; transform:translate(-50%, -50%); background:center / contain no-repeat; }.experience-title::before { background-image:url("/images/illustrations/exp%20bg.svg"); }.projects-title::before { background-image:url("/images/illustrations/key%20projects%20bg.svg"); }
 .hero { min-height:clamp(760px, 56.25vw, 1080px); padding:120px 24px 90px; position:relative; isolation:isolate; display:grid; place-items:center; }
 .intro { position:relative; z-index:1; width:min(1000px, calc(100% - 300px)); text-align:center; font-size:clamp(18px, 1.667vw, 32px); line-height:1.5; }
