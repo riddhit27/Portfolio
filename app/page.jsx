@@ -10,11 +10,11 @@ const roles = [
 ];
 
 const projects = [
-  { image: "/images/projects/nykaa-showcase.png", title: "Nykaa Project Showcase", date: "2025–26", copy: "Brand Collabs, Payouts & Earnings, Notification Centre, Write to NAP" },
-  { image: "/images/projects/jupiter-case-study.png", title: "Jupiter Case Study", date: "Mar 2024", copy: "Redesigning the Onboarding flow for Jupiter RuPay Credit Card" },
-  { image: "/images/projects/jar-showcase.png", title: "Jar Project Showcase", date: "Jun 2022", copy: "3 projects worked on for app Activation, Engagement & Retention." },
-  { image: "/images/projects/savings-goal.png", title: "Savings Goal – Jar Case Study", date: "Jun 2022", copy: "Activation project aimed to promote manual saving behaviour." },
-  { image: "/images/projects/weekly-magic.png", title: "Weekly Magic – Jar Case Study", date: "Jun 2022", copy: "Engagement project, aimed to increase frequency of manual savings." },
+  { card: "/images/project-cards/nykaa.svg", pdf: "/case-studies/1_Nykaa%20Portfolio.pdf", title: "Nykaa Project Showcase" },
+  { card: "/images/project-cards/jupiter.svg", pdf: "/case-studies/2_%20Jupiter%20Case%20study_Credit%20card%20onboarding.pdf", title: "Jupiter Case Study" },
+  { card: "/images/project-cards/jar.svg", pdf: "/case-studies/3_Jar_Project%20Showcase.pdf", title: "Jar Project Showcase" },
+  { card: "/images/project-cards/savings-goal.svg", pdf: "/case-studies/4_Jar_Savings%20Goal%20Case%20study.pdf", title: "Savings Goal – Jar Case Study" },
+  { card: "/images/project-cards/weekly-magic.svg", pdf: "/case-studies/5_Jar_Weekly%20Magic%20Case%20study.pdf", title: "Weekly Magic – Jar Case Study" },
 ];
 
 export default function Home() {
@@ -49,14 +49,14 @@ export default function Home() {
       <img className="experience-doodle tube" src="/images/illustrations/tube.svg" alt="" />
       <img className="experience-doodle credit-card" src="/images/illustrations/credit card.svg" alt="" />
       <img className="experience-doodle gold-bar" src="/images/illustrations/gold bar.svg" alt="" />
-      <h2>Experience</h2>
+      <h2 className="section-title experience-title">Experience</h2>
       <div className="resume">{roles.map((role) => <article key={role.company}><div className="role-top"><h3>{role.company}</h3><time>{role.dates}</time></div><p>{role.copy}</p></article>)}</div>
       <a className="resume-link" href="#experience">View full resume <span>→</span></a>
     </section>
 
     <section id="projects" className="projects section">
-      <h2>Key Projects</h2>
-      <div className="project-grid">{projects.map((project) => <article className="project-card" key={project.title}><div className="art"><img src={project.image} alt="" /></div><div className="project-copy"><div><h3>{project.title}</h3><time>{project.date}</time></div><p>{project.copy}</p></div></article>)}</div>
+      <h2 className="section-title projects-title">Key Projects</h2>
+      <div className="project-grid">{projects.map((project) => <a className="project-card" key={project.title} href={project.pdf} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title} PDF`}><img src={project.card} alt={project.title} /></a>)}</div>
     </section>
 
     <footer><div className="thanks"><img src="/images/illustrations/heart-footer.svg" alt="" /> Thanks for stopping by! <img src="/images/illustrations/cat.svg" alt="" /></div><p>Made in Figma, built with Codex, powered by a lot of coffee.</p></footer>
