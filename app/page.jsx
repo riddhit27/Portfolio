@@ -40,7 +40,7 @@ export default function Home() {
       <img className="doodle plant" src="/images/illustrations/plant.svg" alt="" /><img className="doodle loops" src="/images/illustrations/jalebi.svg" alt="" /><img className="doodle cup" src="/images/illustrations/coffee.svg" alt="" /><img className="doodle drop" src="/images/illustrations/embellishment.svg" alt="" /><img className="doodle eye" src="/images/illustrations/eye.svg" alt="" />
       <div className="intro">
         <p className="lead">A product designer with 6+ years of experience designing e-comm, fintech, and consumer products in the B2C and B2B space.</p>
-        <p>My strengths lie in taking strong ownership, first-principles thinking, communication, and the ability to solve complex problems and deliver fast.</p>
+        <p>I bring strong ownership, first-principles thinking, and clear communication to complex problems, turning them into thoughtful, high-impact outcomes fast.</p>
       </div>
     </section>
 
