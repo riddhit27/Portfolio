@@ -32,6 +32,20 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-revealed");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14, rootMargin: "0px 0px -6%" });
+
+    document.querySelectorAll("[data-reveal]").forEach((element) => observer.observe(element));
+    return () => observer.disconnect();
+  }, []);
+
   return <main>
     <nav aria-label="Main navigation">
       <img className="mark" src="/images/rt-mark.svg" alt="rt" />
@@ -40,7 +54,7 @@ export default function Home() {
 
     <section id="about" className="hero section">
       <img className="doodle plant" src="/images/illustrations/plant.svg" alt="" /><img className="doodle loops" src="/images/illustrations/jalebi.png" alt="" /><img className="doodle cup" src="/images/illustrations/coffee.svg" alt="" /><img className="doodle drop" src="/images/illustrations/embellishment.png" alt="" /><img className="doodle eye" src="/images/illustrations/eye.svg" alt="" />
-      <div className="intro">
+      <div className="intro" data-reveal>
         <p className="lead">A product designer with 6+ years of experience designing e-comm, fintech, and consumer products in the B2C and B2B space.</p>
         <p>I bring strong ownership, first-principles thinking, and clear communication to complex problems, turning them into thoughtful, high-impact outcomes fast.</p>
       </div>
@@ -53,18 +67,17 @@ export default function Home() {
         <img className="experience-doodle credit-card" src="/images/illustrations/credit card.svg" alt="" />
         <img className="experience-doodle gold-bar" src="/images/illustrations/gold bar.svg" alt="" />
         <img className="experience-doodle cursor" src="/images/illustrations/cursor.svg" alt="" />
-        <h2 className="section-title experience-title">Experience</h2>
-        <div className="resume">{roles.map((role) => <article key={role.company}><div className="role-top"><h3>{role.company}</h3><time>{role.dates}</time></div><p>{role.copy}</p></article>)}</div>
-        <a className="resume-link" href="/resume/Riddhi-T-Resume.pdf" target="_blank" rel="noopener noreferrer">View full resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.29 8.71a.996.996 0 0 0 0 1.41L14.88 12H5a1 1 0 1 0 0 2h9.88l-2.59 2.59a.996.996 0 1 0 1.41 1.41l4.3-4.3a.996.996 0 0 0 0-1.41l-4.3-4.29a.996.996 0 0 0-1.41 0Z" /></svg></a>
+        <h2 className="section-title experience-title" data-reveal>Experience</h2>
+        <div className="resume">{roles.map((role, index) => <article key={role.company} data-reveal style={{ "--reveal-delay": `${index * 70}ms` }}><div className="role-top"><h3>{role.company}</h3><time>{role.dates}</time></div><p>{role.copy}</p></article>)}</div>
+        <a className="resume-link" data-reveal href="/resume/Riddhi-T-Resume.pdf" target="_blank" rel="noopener noreferrer">View full resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.29 8.71a.996.996 0 0 0 0 1.41L14.88 12H5a1 1 0 1 0 0 2h9.88l-2.59 2.59a.996.996 0 1 0 1.41 1.41l4.3-4.3a.996.996 0 0 0 0-1.41l-4.3-4.29a.996.996 0 0 0-1.41 0Z" /></svg></a>
       </div>
     </section>
 
     <section id="projects" className="projects section">
-      <h2 className="section-title projects-title">Key Projects</h2>
-      <div className="project-grid">{projects.map((project) => <a className="project-card" key={project.title} href={project.pdf} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title} PDF`}><img src={project.card} alt={project.title} /></a>)}</div>
+      <h2 className="section-title projects-title" data-reveal>Key Projects</h2>
+      <div className="project-grid">{projects.map((project, index) => <a className="project-card" data-reveal style={{ "--reveal-delay": `${index * 70}ms` }} key={project.title} href={project.pdf} target="_blank" rel="noopener noreferrer" aria-label={`Open ${project.title} PDF`}><img src={project.card} alt={project.title} /></a>)}</div>
     </section>
 
-    <footer><div className="thanks"><img src="/images/illustrations/heart-footer.svg" alt="" /> Thanks for stopping by! <img src="/images/illustrations/cat.svg" alt="" /></div><p>Made in Figma, built with Codex, powered by a lot of coffee.</p></footer>
+    <footer data-reveal><div className="thanks"><img src="/images/illustrations/heart-footer.svg" alt="" /> Thanks for stopping by! <img src="/images/illustrations/cat.svg" alt="" /></div><p>Made in Figma, built with Codex, powered by a lot of coffee.</p></footer>
   </main>;
 }
-
