@@ -13,5 +13,9 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
+  },
+  "devDependencies": {
+    "wrangler": "^4.129.0"
   }
 }
+
