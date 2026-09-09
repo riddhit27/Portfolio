@@ -3,6 +3,7 @@ import "./globals.css";
 export const metadata = {
   title: "RT — Product designer",
   description: "Portfolio of a product designer",
+  manifest: "/manifest.webmanifest",
   icons: {
     icon: [
       { url: "/icon.svg", type: "image/svg+xml" },
