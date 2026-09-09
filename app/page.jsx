@@ -53,7 +53,7 @@ export default function Home() {
     </nav>
 
     <section id="about" className="hero section">
-      <img className="doodle plant" src="/images/illustrations/plant.svg" alt="" /><img className="doodle loops" src="/images/illustrations/jalebi.png" alt="" /><img className="doodle cup" src="/images/illustrations/coffee.svg" alt="" /><img className="doodle drop" src="/images/illustrations/embellishment.png" alt="" /><img className="doodle eye" src="/images/illustrations/eye.svg" alt="" />
+      <img className="doodle plant" data-reveal style={{ "--reveal-delay": "80ms" }} src="/images/illustrations/plant.svg" alt="" /><img className="doodle loops" data-reveal style={{ "--reveal-delay": "150ms" }} src="/images/illustrations/jalebi.png" alt="" /><img className="doodle cup" data-reveal style={{ "--reveal-delay": "220ms" }} src="/images/illustrations/coffee.svg" alt="" /><img className="doodle drop" data-reveal style={{ "--reveal-delay": "290ms" }} src="/images/illustrations/embellishment.png" alt="" /><img className="doodle eye" data-reveal style={{ "--reveal-delay": "360ms" }} src="/images/illustrations/eye.svg" alt="" />
       <div className="intro" data-reveal>
         <p className="lead">A product designer with 6+ years of experience designing e-comm, fintech, and consumer products in the B2C and B2B space.</p>
         <p>I bring strong ownership, first-principles thinking, and clear communication to complex problems, turning them into thoughtful, high-impact outcomes fast.</p>
@@ -62,11 +62,11 @@ export default function Home() {
 
     <section id="experience" className="experience section">
       <div className="experience-layout">
-        <img className="experience-doodle lipstick" src="/images/illustrations/lipstick.svg" alt="" />
-        <img className="experience-doodle tube" src="/images/illustrations/tube.svg" alt="" />
-        <img className="experience-doodle credit-card" src="/images/illustrations/credit card.svg" alt="" />
-        <img className="experience-doodle gold-bar" src="/images/illustrations/gold bar.svg" alt="" />
-        <img className="experience-doodle cursor" src="/images/illustrations/cursor.svg" alt="" />
+        <img className="experience-doodle lipstick" data-reveal style={{ "--reveal-delay": "80ms" }} src="/images/illustrations/lipstick.svg" alt="" />
+        <img className="experience-doodle tube" data-reveal style={{ "--reveal-delay": "140ms" }} src="/images/illustrations/tube.svg" alt="" />
+        <img className="experience-doodle credit-card" data-reveal style={{ "--reveal-delay": "200ms" }} src="/images/illustrations/credit card.svg" alt="" />
+        <img className="experience-doodle gold-bar" data-reveal style={{ "--reveal-delay": "260ms" }} src="/images/illustrations/gold bar.svg" alt="" />
+        <img className="experience-doodle cursor" data-reveal style={{ "--reveal-delay": "320ms" }} src="/images/illustrations/cursor.svg" alt="" />
         <h2 className="section-title experience-title" data-reveal>Experience</h2>
         <div className="resume">{roles.map((role, index) => <article key={role.company} data-reveal style={{ "--reveal-delay": `${index * 70}ms` }}><div className="role-top"><h3>{role.company}</h3><time>{role.dates}</time></div><p>{role.copy}</p></article>)}</div>
         <a className="resume-link" data-reveal href="/resume/Riddhi-T-Resume.pdf" target="_blank" rel="noopener noreferrer">View full resume <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.29 8.71a.996.996 0 0 0 0 1.41L14.88 12H5a1 1 0 1 0 0 2h9.88l-2.59 2.59a.996.996 0 1 0 1.41 1.41l4.3-4.3a.996.996 0 0 0 0-1.41l-4.3-4.29a.996.996 0 0 0-1.41 0Z" /></svg></a>
