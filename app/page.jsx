@@ -14,7 +14,7 @@ const projects = [
   { card: "/images/project-cards/notification-centre.svg", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Werk?node-id=3485-67017&p=f&viewport=-30928%2C-31931%2C0.71&t=gO5Cl4P3SMlp7IiK-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2815%3A64738&page-id=187%3A9290", title: "Notification Centre" },
   { card: "/images/project-cards/nykaa.svg", pdf: "/case-studies/1_Nykaa%20Portfolio.pdf", title: "Nykaa Project Showcase" },
   { card: "/images/project-cards/jupiter.svg", pdf: "/case-studies/2_%20Jupiter%20Case%20study_Credit%20card%20onboarding.pdf", title: "Jupiter Case Study" },
-  { card: "/images/project-cards/jar.svg?v=20260909b", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Werk?node-id=412-18168&viewport=2787%2C487%2C0.2&t=e5mYOM5F9X47oip8-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=412%3A18168&page-id=412%3A18024", title: "Jar Project Showcase" },
+  { card: "/images/project-cards/jar.svg?v=20260910", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Werk?node-id=412-18168&viewport=2787%2C487%2C0.2&t=e5mYOM5F9X47oip8-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=412%3A18168&page-id=412%3A18024", title: "Jar Project Showcase" },
   { card: "/images/project-cards/savings-goal.svg?v=20260909b", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Werk?node-id=546-41864&viewport=1910%2C81%2C0.11&t=njoGMwfjAJtxrZ9T-1&scaling=min-zoom&content-scaling=fixed&page-id=412%3A18024", title: "Savings Goal – Jar Case Study" },
   { card: "/images/project-cards/weekly-magic.svg?v=20260909b", pdf: "/case-studies/5_Jar_Weekly%20Magic%20Case%20study.pdf", title: "Weekly Magic – Jar Case Study" },
 ];
