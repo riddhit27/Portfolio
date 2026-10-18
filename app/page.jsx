@@ -10,7 +10,7 @@ const roles = [
 ];
 
 const projects = [
-  { card: "/images/project-cards/payouts-and-earnings.svg", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Riddhi?node-id=4125-67486&viewport=-14187%2C-7297%2C0.3&t=nLD2rH99Ae1k8PCg-0&scaling=contain&content-scaling=fixed&starting-point-node-id=4125%3A67486&show-proto-sidebar=1", title: "Payouts & Earnings" },
+  { card: "/images/project-cards/payouts-and-earnings.svg?v=20261018b", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Riddhi?node-id=4125-67486&viewport=-14187%2C-7297%2C0.3&t=nLD2rH99Ae1k8PCg-0&scaling=contain&content-scaling=fixed&starting-point-node-id=4125%3A67486&show-proto-sidebar=1", title: "Payouts & Earnings" },
   { card: "/images/project-cards/write-to-nap.svg", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Werk?node-id=3485-66506&viewport=-7536%2C-6238%2C0.2&t=7EDNxYGmaDIlYXOl-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2815%3A64738&page-id=187%3A9290", title: "Write to NAP" },
   { card: "/images/project-cards/nap-creator-research.svg?v=20261011", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Riddhi?node-id=4371-119911&viewport=-27313%2C-14671%2C0.53&t=Z7HXO0q1BSVYQcA5-1&scaling=contain&content-scaling=fixed&starting-point-node-id=4371%3A119911&show-proto-sidebar=1&page-id=187%3A9290", title: "NAP Creator Research" },
   { card: "/images/project-cards/notification-centre.svg", pdf: "https://www.figma.com/proto/rl6VUK1XBF4De1WXBy34yn/Werk?node-id=3485-67017&p=f&viewport=-30928%2C-31931%2C0.71&t=gO5Cl4P3SMlp7IiK-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2815%3A64738&page-id=187%3A9290", title: "Notification Centre" },
